@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+#welcome-section {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+#welcome-section h1{
+    font-size: 5rem;
+    color: forestgreen;
+    letter-spacing: 0.25rem;
+
+}
+#welcome-section h2 {
+    font-size: 3rem;
+    color: darkgreen;
+}
+#welcome-section p {
+    font-size: 2rem;
+    color: green;
+}
+#projects {
+    display: flex;
+    
+}
+#project-head {
+    font-size: 4rem;
+    color: chocolate;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+.project-title {
+    border: 3px solid darkslategrey;
+    border-radius: 20px;
+    min-width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.project-title p {
+    font-size: 1.2rem;
+}
+.project-title h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: chocolate;
+}
+
+@media screen and (max-width: 720px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .project-title {
+        min-height: 200px;
+        width: 200px;
+        
+    }
+}
+@media screen and (max-width: 920px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .project-title {
+        min-height: 200px;
+        width: 400px;
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #projects {
+        flex-wrap: wrap;
+        
+    }
+    .project-title {
+        min-height: 200px;
+        width: 200px;
+        margin-right: 80px;
+        margin-left: 80px;
+        
+    }
+}
+.project-title a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+.project-title a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 20px 70px;
+    list-style-type: none;
+}
+#navbar li {
+    font-size: 1.3rem;
+    margin-right: 20%;
+}
+#navbar li a {
+    text-decoration: none;
+}
